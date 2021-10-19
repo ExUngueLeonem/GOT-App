@@ -9,8 +9,7 @@ export default class ItemList extends Component {
     }
 
     componentDidMount() {
-        const {getData} = this.props; //this.gotService.getAllHouses
-
+        const {getData} = this.props;
         getData()
             .then((itemList) => {
                 this.setState({
@@ -20,7 +19,7 @@ export default class ItemList extends Component {
     }
 
     renderItems(arr) {
-        return arr.map((item) => { // в нашем айтеме нет ID 
+        return arr.map((item) => { 
             const {id} = item;
             const label = this.props.renderItem(item);
             return (
@@ -37,7 +36,6 @@ export default class ItemList extends Component {
 
     render() {
         const {itemList} = this.state;
-        //console.log(itemList);
 
         if (!itemList) {
             return <Spinner/>

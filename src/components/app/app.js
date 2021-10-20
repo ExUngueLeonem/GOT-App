@@ -45,11 +45,10 @@ class App extends Component {
                     </Button>{' '}
                     </div>
 
-
         if (this.state.showRandomChar) {
             return (
                 <>
-                    <RandomChar/> 
+                    <RandomChar interval={4000}/> 
                     {res}
                 </>
             );

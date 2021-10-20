@@ -3,6 +3,7 @@ import './randomChar.css';
 import gotService from '../../services/gotService'
 import Spinner from '../spinner';
 import ErrorMessage from '../errorMessage';
+import PropTypes from 'prop-types'
 export default class RandomChar extends Component {
 
     gotService = new gotService();
@@ -10,6 +11,11 @@ export default class RandomChar extends Component {
         char: {},
         loading: true
     }
+
+    static propTypes ={
+        interval: PropTypes.number
+    }
+
     static defaultProps = {
         interval: 10000
     }

@@ -3,7 +3,7 @@ import ItemList from "../itemList";
 import ErrorMessage from "../errorMessage";
 import gotService from '../../services/gotService';
 import {withRouter} from 'react-router-dom';
-
+import View from '../itemList'
 class BookPage extends Component {
     gotService = new gotService();
 
@@ -30,7 +30,7 @@ class BookPage extends Component {
                     this.props.history.push(itemId)
                 }}
                 getData={this.gotService.getAllBooks}
-                renderItem={({name}) => `${name}`}/>
+                renderItem={({name}) => `${name}`}/>    
         )
     }
 }

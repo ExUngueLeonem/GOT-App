@@ -3,7 +3,6 @@ import ItemList from "../itemList";
 import ErrorMessage from "../errorMessage";
 import gotService from '../../services/gotService';
 import {withRouter} from 'react-router-dom';
-import View from '../itemList'
 class BookPage extends Component {
     gotService = new gotService();
 

@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Udemy training React app
+
+fetching data from rest api and visualize this
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
